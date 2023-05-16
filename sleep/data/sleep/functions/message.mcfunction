@@ -1,0 +1,2 @@
+execute store result score #SERVER sleep_count if entity @e[type=player]
+execute if score #SERVER sleep_count matches 2.. run tellraw @a ["",{"selector":"@p[tag=sleep]"}," slept with ",{"selector":"@r[tag=!sleep]"},"'s mother."]
